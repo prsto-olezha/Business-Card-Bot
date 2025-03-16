@@ -4,6 +4,6 @@ from aiogram.types import Message
 
 router = Router()
 
-@router.message(Command("starta"))
+@router.message(Command("start"))
 async def start(msg: Message):
     await msg.answer(f"Привет, {msg.from_user.first_name} (Админ)!")
